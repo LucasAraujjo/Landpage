@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adicionando estilização ao botão Próximo Membro */
+#nextMemberBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#nextMemberBtn:hover {
+    background-color: #45a049;
+}
+
+/* Adicionando algumas margens entre os membros */
+.member {
+    margin-bottom: 20px;
+}
+
+/* Adicionando estilos ao carousel */
+.members-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+#membersContainer {
+    display: flex;
+    width: 110%; /* Ajuste para mostrar dois membros por vez */
+    transition: transform 0.5s ease-in-out;
+}
+
+.member {
+    width: calc(300% / 2); /* Ajuste para mostrar dois membros por vez */
+    box-sizing: border-box;
+    padding-right: 80px; /* Espaçamento entre membros */
+}
+
+/* Adicionando estilos aos botões */
+#prevMemberBtn, #nextMemberBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#prevMemberBtn {
+    left: 10px;
+}
+
+#nextMemberBtn {
+    right: 10px;
+}
