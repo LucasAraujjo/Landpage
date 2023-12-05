@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Av Front-end</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Grupo Front-end</h1>
+        </div>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Apresentação</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="profile">
+            <!-- Adicionando uma div para agrupar os membros em um carrossel -->
+            <div class="members-carousel">
+                <div id="membersContainer">
+                    <div class="member">
+                        <img src="member1.jpg" alt="Membro 1">
+                        <h2>Nome do Membro 1</h2>
+                        <p>Competências: HTML, CSS, JavaScript</p>
+                        <p>Experiências Profissionais: Desenvolvedor Front-end na Empresa ABC</p>
+                        <p>Escolaridade: Bacharel em Ciência da Computação</p>
+                    </div>
+
+                    <div class="member">
+                        <img src="member2.jpg" alt="Membro 2">
+                        <h2>Nome do Membro 2</h2>
+                        <p>Competências: HTML, CSS, UX/UI Design</p>
+                        <p>Experiências Profissionais: Designer de Interface na Empresa XYZ</p>
+                        <p>Escolaridade: Mestre em Design de Interatividade</p>
+                    </div>
+
+                    <div class="member">
+                        <img src="member3.jpg" alt="Membro 3">
+                        <h2>Nome do Membro 3</h2>
+                        <p>Competências: Python, Data Science</p>
+                        <p>Experiências Profissionais: Cientista de Dados na Empresa DataTech</p>
+                        <p>Escolaridade: Ph.D. em Ciência de Dados</p>
+                    </div>
+
+                    <div class="member">
+                        <img src="member4.jpg" alt="Membro 4">
+                        <h2>Nome do Membro 4</h2>
+                        <p>Competências: Java, Spring Framework</p>
+                        <p>Experiências Profissionais: Desenvolvedor Java na Empresa Tech Solutions</p>
+                        <p>Escolaridade: Bacharel em Engenharia de Software</p>
+                    </div>
+
+                    <div class="member">
+                        <img src="member5.jpg" alt="Membro 5">
+                        <h2>Nome do Membro 5</h2>
+                        <p>Competências: React, Node.js, MongoDB</p>
+                        <p>Experiências Profissionais: Desenvolvedor Full Stack na Empresa InnovateTech</p>
+                        <p>Escolaridade: Graduado em Ciência da Computação</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicionando botões de navegação no carrossel -->
+            <button id="prevMemberBtn" onclick="showPrevMember()">Membro Anterior</button>
+            <button id="nextMemberBtn" onclick="showNextMember()">Próximo Membro</button>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Grupo Fantástico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
