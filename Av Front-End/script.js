@@ -1,12 +1,12 @@
 let currentMemberIndex = 0;
 
 function showNextMember() {
-    currentMemberIndex = (currentMemberIndex + 1) % 4;
+    currentMemberIndex = (currentMemberIndex + 1) % 5;
     updateMembers();
 }
 
 function showPrevMember() {
-    currentMemberIndex = (currentMemberIndex - 2 + 5) % 5;
+    currentMemberIndex = (currentMemberIndex - 1 + 5) % 5;
     updateMembers();
 }
 
@@ -22,6 +22,5 @@ document.getElementById('membersContainer').addEventListener('transitionend', ()
     const membersContainer = document.getElementById('membersContainer');
     membersContainer.style.transition = ''; // Remova o valor da propriedade transition
 });
-
 
 
