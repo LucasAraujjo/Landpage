@@ -1,7 +1,7 @@
 let currentMemberIndex = 0;
 
 function showNextMember() {
-    currentMemberIndex = (currentMemberIndex + 2) % 5;
+    currentMemberIndex = (currentMemberIndex + 1) % 4;
     updateMembers();
 }
 
@@ -22,3 +22,16 @@ document.getElementById('membersContainer').addEventListener('transitionend', ()
     const membersContainer = document.getElementById('membersContainer');
     membersContainer.style.transition = ''; // Remova o valor da propriedade transition
 });
+
+
+
+
+document.getElementById('next').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft += widthItem;
+  
+  }
+  document.getElementById('prev').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft -= widthItem;
+  }
