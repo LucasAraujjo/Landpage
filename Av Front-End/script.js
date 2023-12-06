@@ -12,7 +12,7 @@ function showPrevMember() {
 
 function updateMembers() {
     const membersContainer = document.getElementById('membersContainer');
-    const offset = -currentMemberIndex * (100 / 2); // Ajuste para mostrar dois membros por vez
+    const offset = -currentMemberIndex * (100); // Ajuste para mostrar dois membros por vez
     membersContainer.style.transition = 'transform 0.5s ease-in-out';
     membersContainer.style.transform = `translateX(${offset}%)`;
 }
@@ -25,13 +25,3 @@ document.getElementById('membersContainer').addEventListener('transitionend', ()
 
 
 
-
-document.getElementById('next').onclick = function(){
-    const widthItem = document.querySelector('.item').offsetWidth;
-    document.getElementById('formList').scrollLeft += widthItem;
-  
-  }
-  document.getElementById('prev').onclick = function(){
-    const widthItem = document.querySelector('.item').offsetWidth;
-    document.getElementById('formList').scrollLeft -= widthItem;
-  }

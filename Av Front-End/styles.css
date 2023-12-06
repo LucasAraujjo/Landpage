@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #333;
+	background-image: linear-gradient(to right, #4d0101, #792109, #b60303);
     color: white;
     padding: 25px;
 
@@ -82,7 +82,43 @@ main {
 }
 
 #botoes {
-    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+/* Adicionando estilos ao carousel */
+.members-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Ajuste a largura conforme necessário */
+
+}
+
+#membersContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Adicionando estilização ao botão Próximo Membro */
+#nextMemberBtn, #prevMemberBtn {
+    background-color: #EDEDED;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#nextMemberBtn:hover {
+    background-color: #b60303;
+}
+
+#prevMemberBtn:hover {
+    background-color: #b60303;
 }
 
 footer {
@@ -92,54 +128,10 @@ footer {
     text-align: center;
 }
 
-/* Adicionando estilização ao botão Próximo Membro */
-#nextMemberBtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#nextMemberBtn:hover {
-    background-color: #45a049;
-}
 
 
 
-/* Adicionando estilos ao carousel */
-.members-carousel {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    margin: 0 auto; /* Centraliza o container na tela */
-}
-
-#membersContainer {
-    display: flex;
-    width: 110%; /* Ajuste para mostrar dois membros por vez */
-    transition: transform 0.5s ease-in-out;
-}
 
 
-/* Adicionando estilos aos botões */
-#prevMemberBtn, #nextMemberBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    font-size: 16px;
-}
-
-#prevMemberBtn {
-    left: 10px;
-}
-
-#nextMemberBtn {
-    right: 10px;
-}
 
 
