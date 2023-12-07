@@ -12,18 +12,16 @@ function showPrevMember() {
 
 function updateMembers() {
     const membersContainer = document.getElementById('membersContainer');
-    const offset = -currentMemberIndex * (100); // Ajuste para mostrar dois membros por vez
+    const offset = -currentMemberIndex * (100);
     membersContainer.style.transition = 'transform 0.5s ease-in-out';
     membersContainer.style.transform = `translateX(${offset}%)`;
 }
 
-// Limpar a transição após a animação para permitir navegação contínua
 document.getElementById('membersContainer').addEventListener('transitionend', () => {
     const membersContainer = document.getElementById('membersContainer');
-    membersContainer.style.transition = ''; // Remova o valor da propriedade transition
+    membersContainer.style.transition = ''
 });
 
-// ... Seu script existente ...
 
 const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('change', toggleDarkMode);
