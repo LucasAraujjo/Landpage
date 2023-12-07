@@ -31,9 +31,6 @@ function toggleDarkMode() {
     body.classList.toggle('dark-mode', darkModeToggle.checked);
 }
 
-// ... Seu script existente ...
-// script.js
-
 document.addEventListener('DOMContentLoaded', function () {
     const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.addEventListener('change', toggleDarkMode);
@@ -42,6 +39,4 @@ document.addEventListener('DOMContentLoaded', function () {
         const body = document.body;
         body.classList.toggle('dark-mode', darkModeToggle.checked);
     }
-
-    // ... Seu script existente ...
 });
