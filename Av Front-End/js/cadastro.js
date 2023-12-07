@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const body = document.body;
         body.classList.toggle('dark-mode', darkModeToggle.checked);
     }
-
-    // ... Seu script existente ...
 });
 
 function clicar() {
