@@ -16,8 +16,8 @@ body {
 header {
 	background-color: #b8b8b8;
     color: rgb(0, 0, 0);
-    padding: 25px;
-    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    padding: 10px;
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 }
 
 .logo{
@@ -30,7 +30,7 @@ header {
 }
 
 .logo h1{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .links{
@@ -54,8 +54,10 @@ header {
 .links a{
     text-decoration: none;
     color: #000000;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Consolas, monaco, monospace;
     font-size: 20px;
+    
+    
 }
 
 .links a:hover{
@@ -120,11 +122,11 @@ main {
 }
 
 #nextMemberBtn:hover {
-    background-color: #b60303;
+    background-color: #333;
 }
 
 #prevMemberBtn:hover {
-    background-color: #b60303;
+    background-color: #333;
 }
 
 footer {
@@ -146,8 +148,8 @@ footer {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    width: 18%;
-    margin-left: 0.6%;
+    width: 20%;
+    margin-left: 10%;
 }
 
 .card:hover {
@@ -254,5 +256,27 @@ body.dark-mode .gallery .card {
 body.dark-mode .member {
     background-color: #555; 
     color: white; 
+}
+
+body.dark-mode header {
+    background-color: #555; /* Altere para a cor desejada no modo escuro */
+    color: white; /* Altere para a cor do texto desejada no modo escuro */
+}
+
+body.dark-mode .links a {
+    background-color: #555; /* Altere para a cor desejada no modo escuro */
+    color: white; 
+}
+
+body.dark-mode #nextMemberBtn,
+body.dark-mode #prevMemberBtn {
+    background-color: #555; /* Cor dos botões no modo escuro */
+    color: white; /* Cor do texto dos botões no modo escuro */
+}
+
+body.dark-mode #nextMemberBtn:hover,
+body.dark-mode #prevMemberBtn:hover {
+    background-color: white; /* Cor dos botões no modo escuro */
+    color: #555; 
 }
 
