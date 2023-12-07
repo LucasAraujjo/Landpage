@@ -23,4 +23,27 @@ document.getElementById('membersContainer').addEventListener('transitionend', ()
     membersContainer.style.transition = ''; // Remova o valor da propriedade transition
 });
 
+// ... Seu script existente ...
 
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('change', toggleDarkMode);
+
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode', darkModeToggle.checked);
+}
+
+// ... Seu script existente ...
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('change', toggleDarkMode);
+
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode', darkModeToggle.checked);
+    }
+
+    // ... Seu script existente ...
+});
