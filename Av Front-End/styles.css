@@ -14,8 +14,8 @@ body {
 }
 
 header {
-	background-image: linear-gradient(to right, #4d0101, #792109, #b60303);
-    color: white;
+	background-color: #b8b8b8;
+    color: rgb(0, 0, 0);
     padding: 25px;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
 }
@@ -53,7 +53,7 @@ header {
 
 .links a{
     text-decoration: none;
-    color: #EDEDED;
+    color: #000000;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 20px;
 }
@@ -73,6 +73,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    
 }
 
 .member img {
@@ -95,12 +96,14 @@ main {
     width: 100%; /* Ajuste a largura conforme necessário */
     display: flex;
     justify-content: center;
+    
 }
 
 #membersContainer {
     display: flex;
     transition: transform 0.5s ease-in-out;
     min-width: 100%; /* Certifique-se de que o conteúdo tenha pelo menos a largura da tela */
+    
 }
 
 
@@ -149,6 +152,7 @@ footer {
 
 .card:hover {
     transform: scale(1.05);
+    
 }
 
 .card img {
@@ -160,9 +164,95 @@ footer {
 .card h2 {
     font-size: 18px;
     margin: 10px;
+    
 }
 
 .card p {
     font-size: 14px;
     margin: 5px 10px;
+    
 }
+
+/* ... Seus estilos existentes ... */
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+    margin-left: auto;
+}
+
+.dark-mode .member {
+    background-color: #555; /* Altere para a cor desejada no modo escuro */
+    color: white;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50% 50% 50% 50%;
+}
+
+input:checked + .slider {
+    background-color: #333;
+    
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #3333;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    border-radius: 50% 50% 50% 50%;
+}
+
+/* ... Seus estilos existentes ... */
+
+body.dark-mode .gallery .card {
+    background-color: #555; /* Altere para a cor desejada no modo escuro */
+    color: white; /* Altere para a cor do texto desejada no modo escuro */
+    
+}
+
+/* Ajuste estilos específicos para o modo escuro no elemento .member */
+body.dark-mode .member {
+    background-color: #555; 
+    color: white; 
+}
+
