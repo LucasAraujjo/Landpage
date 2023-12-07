@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Av Front-End/estilos/cadastro.css">
+    <script src="/Av Front-End/js/cadastro.js" defer></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>CodeSquad</h1>
+            <div class="links">
+                <ul>
+                    <li><a href="/Av Front-End/index.html">Home</a></li>
+                    <li><a href="/Av Front-End/paginas/galeria.html">Saiba Mais</a></li>
+                    <li><a href="/Av Front-End/paginas/cadastro.html">Contato & Feedback</a></li>
+                </ul>
+            </div>
+            <div class="dark-mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <p></p>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <section class="contact">
+            <h4>Contato</h4>
+            <strong>
+                <p>Entre em contato conosco através do formulário abaixo:</p>
+            </strong>
+            <br>
+            <form>
+
+                <label for="nome" name="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="email" id="email"><strong>Email:</strong></label>
+                <strong><input type="email" id="email" name="email" required></strong>
+
+                <label for="mensagem"><strong>Mensagem:</strong></label>
+                <textarea id="msg" name="msg" required></textarea>
+                <br>
+                <button type="submit" id="enviar" onclick="clicar()"><strong>Enviar</strong></button>
+
+
+            </form>
+        </section>
+
+        <section class="contact">
+            <h4>Deixe seu Feedback!</h4>
+
+                <p>Nos diga como foi a sua experiência.</p>
+
+            <br>
+            <form>
+                <label for="mensagem"><strong>Mensagem:</strong></label>
+                <textarea id="msg" name="msg" required></textarea>
+                <br>
+                <button type="submit" id="enviar" onclick="mensagem()"><strong>Enviar</strong></button>
+
+            </form>
+        </section>
+
+
+
+    </main>
+    <footer>
+        © Desafio Jovem do Recife. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
